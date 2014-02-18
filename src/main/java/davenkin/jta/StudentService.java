@@ -13,5 +13,4 @@ public interface StudentService {
 
     public void moveStudentFromQueueToDB() throws JMSException;
 
-    void insertStudent(String name, String id);
 }

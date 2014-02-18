@@ -66,7 +66,7 @@ public class StudentController {
         return "Received one queue from MyQueue: " + message;
     }
 
-    @RequestMapping(value = "/fromQueueToDB", method = RequestMethod.GET)
+    @RequestMapping(value = "/moveQueueToDB", method = RequestMethod.GET)
     @ResponseBody
     public String fromQueueToDB() throws JMSException {
         studentService.moveStudentFromQueueToDB();
