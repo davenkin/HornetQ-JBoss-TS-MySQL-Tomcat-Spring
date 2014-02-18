@@ -5,11 +5,15 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
                 http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
-  <display-name>jms-db-jta</display-name>
-        <context-param>
-            <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:applicationContext.xml</param-value>
-        </context-param>
+    <display-name>jms-db-jta</display-name>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:applicationContextDomain.xml,
+            classpath:applicationContextDatasource.xml,
+            classpath:applicationContextJms.xml,
+            classpath:applicationContextJta.xml,
+        </param-value>
+    </context-param>
 
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
