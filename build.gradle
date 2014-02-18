@@ -37,11 +37,6 @@ dependencies {
         exclude group: 'org.jboss.spec.javax.servlet', module: 'jboss-servlet-api_3.0_spec'
     }
 
-    runtime(
-            'mysql:mysql-connector-java:5.1.26'
-    )
-
-
 }
 
 
